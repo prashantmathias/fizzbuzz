@@ -1,11 +1,9 @@
 def fizzbuzz(n)
-  if n%3 == 0 && n%5 != 0
-    "Fizz"
-  elsif n%3 != 0 && n%5 == 0
-    "Buzz"
-  elsif (n%3 && n%5) == 0
-    "FizzBuzz"
+  case n 
+  when n%3 == 0 && n%5 != 0 then "Fizz"
+  when n%5 == 0 && n%3 != 0 then "Buzz"
+  when n%5 && n%3 == 0 then "FizzBuzz"
   else
     n
   end
-end  
+end
