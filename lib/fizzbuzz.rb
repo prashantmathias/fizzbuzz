@@ -1,16 +1,11 @@
-def fizzbuzz(num)
-
-  if num%3 == 0 && num%5 != 0
-    "fizz"
-  elsif num%5 == 0 && num%3 != 0
-    "buzz"
-  elsif (num%3 && num%5) == 0
-    "fizzbuzz"
+def fizzbuzz(n)
+  if n%3 == 0 && n%5 != 0
+    "Fizz"
+  elsif n%3 != 0 && n%5 == 0
+    "Buzz"
+  elsif (n%3 && n%5) == 0
+    "FizzBuzz"
   else
-    num
+    n
   end
-
-end
-
-
-#(1..20).each {|x| puts "#{x} --> #{fizzbuzz(x)}" }
+end  
